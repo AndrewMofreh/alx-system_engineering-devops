@@ -1,16 +1,12 @@
 #!/bin/bash
 
-# Prompt for file name
 read -p "Enter the file name: " file_name
 
-# Prompt for input
 read -p "Enter your input: " user_input
 
-# Create the file with the provided file name and write the shebang and input
 echo -e '#!/bin/bash\n'"$user_input" > "$file_name"
 
-# Make the script file executable
-chmod +x "$file_name"
+chnod +x "$file_name"
 
 echo "Script file '$file_name' created successfully."
 

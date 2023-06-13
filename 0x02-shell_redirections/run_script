@@ -6,7 +6,7 @@ read -p "Enter your input: " user_input
 
 echo -e '#!/bin/bash\n'"$user_input" > "$file_name"
 
-chnod +x "$file_name"
+chmod +x "$file_name"
 
 echo "Script file '$file_name' created successfully."
 
